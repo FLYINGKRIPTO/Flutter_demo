@@ -16,16 +16,16 @@ class Home extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 //1st CHILD
-                Text(
+                Expanded(child: Text(
                   "Spicejet ",
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
                     decoration: TextDecoration.none,
-                    fontSize: 40.0,
+                    fontSize: 35.0,
                     fontFamily: 'Gayathri',
                     fontWeight: FontWeight.w700,
                     color: Colors.deepPurple,
-                  ),
+                  )),
                 ),
 
                 //2nd Child
@@ -34,7 +34,7 @@ class Home extends StatelessWidget {
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
                     decoration: TextDecoration.none,
-                    fontSize: 40.0,
+                    fontSize: 20.0,
                     fontFamily: 'Gayathri',
                     fontWeight: FontWeight.w700,
                     color: Colors.deepPurple,)
