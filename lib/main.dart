@@ -7,6 +7,13 @@ void main(){
       appBar: AppBar(title: Text("Long List"),),
       //body: getListView(),
         body: getLongListView(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          debugPrint (" FAB CLICKED ");
+        },
+        child: Icon(Icons.add),
+        tooltip: 'Add one more item',
+      ),
     )
   ));
 }
