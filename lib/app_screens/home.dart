@@ -7,39 +7,72 @@ class Home extends StatelessWidget {
 
     return Center(
         child: Container(
+            padding: EdgeInsets.all(10.0),
+            margin: EdgeInsets.only(top: 30.0),
             alignment: Alignment.center,
             color: Colors.amber,
             // width: 200.0,
             // height: 100.0,
             // margin: EdgeInsets.only(left: 15.0,top: 30.0),
             // padding: EdgeInsets.all(22.0),
-            child: Row(
+            child: Column(
               children: <Widget>[
-                //1st CHILD
-                Expanded(child: Text(
-                  "Spicejet ",
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                    decoration: TextDecoration.none,
-                    fontSize: 35.0,
-                    fontFamily: 'Gayathri',
-                    fontWeight: FontWeight.w700,
-                    color: Colors.deepPurple,
-                  )),
+                Row(
+                  children: <Widget>[
+                    //1st CHILD
+                    Expanded(
+                      child: Text("Spicejet ",
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                            decoration: TextDecoration.none,
+                            fontSize: 35.0,
+                            fontFamily: 'Gayathri',
+                            fontWeight: FontWeight.w700,
+                            color: Colors.deepPurple,
+                          )),
+                    ),
+
+                    //2nd Child
+                    Expanded(
+                        child: Text("Bengaluru to Mumbai",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontSize: 20.0,
+                              fontFamily: 'Gayathri',
+                              fontWeight: FontWeight.w700,
+                              color: Colors.deepPurple,
+                            ))),
+                  ],
                 ),
+                Row(
+                  children: <Widget>[
+                    //1st CHILD
+                    Expanded(
+                      child: Text("INDI GO",
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                            decoration: TextDecoration.none,
+                            fontSize: 35.0,
+                            fontFamily: 'Gayathri',
+                            fontWeight: FontWeight.w700,
+                            color: Colors.deepPurple,
+                          )),
+                    ),
 
-                //2nd Child
-                Expanded(child: Text(
-                  "Bengaluru to Mumbai",
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                    decoration: TextDecoration.none,
-                    fontSize: 20.0,
-                    fontFamily: 'Gayathri',
-                    fontWeight: FontWeight.w700,
-                    color: Colors.deepPurple,)
-                  )),
-
+                    //2nd Child
+                    Expanded(
+                        child: Text("Bengaluru to Chennai",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontSize: 20.0,
+                              fontFamily: 'Gayathri',
+                              fontWeight: FontWeight.w700,
+                              color: Colors.deepPurple,
+                            ))),
+                  ],
+                )
               ],
             )));
   }
