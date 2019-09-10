@@ -17,11 +17,12 @@ class Home extends StatelessWidget {
             // padding: EdgeInsets.all(22.0),
             child: Column(
               children: <Widget>[
+                FlightImageAsset(),
                 Row(
                   children: <Widget>[
                     //1st CHILD
                     Expanded(
-                      child: Text("Spicejet ",
+                      child: Text("Spicejet MY ",
                           textDirection: TextDirection.ltr,
                           style: TextStyle(
                             decoration: TextDecoration.none,
@@ -72,8 +73,19 @@ class Home extends StatelessWidget {
                               color: Colors.deepPurple,
                             ))),
                   ],
-                )
+                ),
               ],
             )));
+  }
+}
+
+class FlightImageAsset extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    AssetImage assetImage = AssetImage('images/flight.png');
+    Image image = Image(image: assetImage);
+
+    return Container(child: image);
   }
 }
