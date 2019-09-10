@@ -17,6 +17,13 @@ void main(){
     )
   ));
 }
+
+void showSnackBar(BuildContext context,String item){
+  var snackbar = SnackBar(
+    content: Text(" You just tapped $item " ),
+  );
+  Scaffold.of(context).showSnackBar(snackbar);
+}
 List<String> getListElements(){
   var items = List<String>.generate(1000, (counter) => "Item $counter");
   return items;
@@ -32,6 +39,7 @@ Widget getLongListView(){
           trailing: Icon(Icons.assistant),
           onTap: (){
             debugPrint(' ${listitems[index]} was tapped');
+            showSnackBar(context,listitems[index]);
           },
         );
       });
