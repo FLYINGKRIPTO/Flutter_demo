@@ -21,6 +21,11 @@ Widget getLongListView(){
       itemBuilder: (context,index){
         return ListTile(
           title: Text(listitems[index]),
+          leading: Icon(Icons.ac_unit),
+          trailing: Icon(Icons.assistant),
+          onTap: (){
+            debugPrint(' ${listitems[index]} was tapped');
+          },
         );
       });
   return listView;
