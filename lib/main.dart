@@ -18,7 +18,9 @@ Widget getListView(){
         title: Text("Landscape"),
         subtitle: Text("Beautiful View"),
         trailing: Icon(Icons.wb_sunny),
-
+        onTap: (){
+          
+        },
       ),
 
       ListTile(
