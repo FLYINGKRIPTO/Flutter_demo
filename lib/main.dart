@@ -4,12 +4,29 @@ void main(){
   runApp(MaterialApp(
     title: "Exploring UI Widgets",
     home : Scaffold(
-      appBar: AppBar(title: Text("Basic List View"),),
-      body: getListView(),
-
+      appBar: AppBar(title: Text("Long List"),),
+      //body: getListView(),
+        body: getLongListView(),
     )
   ));
 }
+List<String> getListElements(){
+  var items = List<String>.generate(1000, (counter) => "Item $counter");
+  return items;
+ }
+
+Widget getLongListView(){
+  var listitems = getListElements();
+  var listView  = ListView.builder(
+      itemBuilder: (context,index){
+        return ListTile(
+          title: Text(listitems[index]),
+        );
+      });
+  return listView;
+}
+
+
 Widget getListView(){
   var listView = ListView(
     children: <Widget>[
@@ -19,7 +36,7 @@ Widget getListView(){
         subtitle: Text("Beautiful View"),
         trailing: Icon(Icons.wb_sunny),
         onTap: (){
-          
+
         },
       ),
 
