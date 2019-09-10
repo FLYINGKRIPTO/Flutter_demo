@@ -15,7 +15,10 @@ class Home extends StatelessWidget{
        // padding: EdgeInsets.all(22.0),
         child: Text("Flight Takes",textDirection: TextDirection.ltr,
          style: TextStyle(
-            decoration: TextDecoration.none
+            decoration: TextDecoration.none,
+            fontSize: 40.0,
+            fontFamily: 'Gayathri',
+            fontWeight:  FontWeight.w700
         ),
         ),
 
