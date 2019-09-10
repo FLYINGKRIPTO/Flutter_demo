@@ -7,10 +7,12 @@ class Home extends StatelessWidget{
 
     return Center(
       child:   Container(
-        alignment: Alignment.bottomLeft,
+        alignment: Alignment.center,
         color: Colors.amber,
-        width: 200.0,
-        height: 100.0,
+       // width: 200.0,
+       // height: 100.0,
+        margin: EdgeInsets.only(left: 15.0,top: 30.0),
+        padding: EdgeInsets.all(22.0),
         child: Text("Flight Takes",textDirection: TextDirection.ltr),
       )
     ) ;
