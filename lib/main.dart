@@ -4,7 +4,9 @@ void main(){
   runApp(MaterialApp(
     title: "Exploring UI Widgets",
     home : Scaffold(
+      appBar: AppBar(title: Text("Basic List View"),),
       body: getListView(),
+
     )
   ));
 }
@@ -33,7 +35,10 @@ Widget getListView(){
         subtitle: Text("Standup artist"),
         trailing: Icon(Icons.art_track),
 
-      )
+      ),
+
+      Text("YET another list item"),
+      Container(color: Colors.deepOrange,height: 50.0,)
     ],
   );
   return listView;
