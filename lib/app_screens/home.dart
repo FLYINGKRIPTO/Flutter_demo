@@ -74,6 +74,7 @@ class Home extends StatelessWidget {
                             ))),
                   ],
                 ),
+                FlightbookButton()
               ],
             )));
   }
@@ -87,5 +88,23 @@ class FlightImageAsset extends StatelessWidget {
     Image image = Image(image: assetImage);
 
     return Container(child: image);
+  }
+}
+
+class FlightbookButton extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+
+    return Container(
+      child: RaisedButton(
+          color: Colors.white,
+          child: Text("Book Your Flight"),
+          elevation: 6.0,
+          onPressed: (){
+            //Action to be performed
+          },
+      ));
   }
 }
