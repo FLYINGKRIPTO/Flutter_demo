@@ -21,6 +21,12 @@ void main(){
 void showSnackBar(BuildContext context,String item){
   var snackbar = SnackBar(
     content: Text(" You just tapped $item " ),
+    action: SnackBarAction(
+      label: "UNDO",
+      onPressed: (){
+        debugPrint('Performing dummy undo operation');
+      },
+    ),
   );
   Scaffold.of(context).showSnackBar(snackbar);
 }
