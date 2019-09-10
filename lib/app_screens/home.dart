@@ -5,13 +5,14 @@ class Home extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return Container(
-      alignment: Alignment.bottomLeft,
-      color: Colors.amber,
-      width: 200.0,
-      height: 100.0,
-      child: Text("Flight Takes",textDirection: TextDirection.ltr),
-    );
+    return Center(
+      child:   Container(
+        alignment: Alignment.bottomLeft,
+        color: Colors.amber,
+        width: 200.0,
+        height: 100.0,
+        child: Text("Flight Takes",textDirection: TextDirection.ltr),
+      )
+    ) ;
   }
-
 }
